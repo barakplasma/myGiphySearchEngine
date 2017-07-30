@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Let's get started now
+  form(method="GET" action="/api/search")
+    label(for="query") search for gifs of
+      input(name="query")
+    button submit
